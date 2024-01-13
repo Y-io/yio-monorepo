@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "all:dev": "pnpm --filter \"./apps/**\" dev ",
+    "server:dev": "pnpm --filter=server start:dev",
+    "server:doc": "pnpm --filter=server compodoc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "prettier": "npx prettier --check '**/*.{json,ts}'",
@@ -25,11 +28,16 @@
     "commitizen": "^4.3.0",
     "conventional-changelog-cli": "^4.1.0",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^8.0.0"
+    "husky": "^8.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.1.3"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
