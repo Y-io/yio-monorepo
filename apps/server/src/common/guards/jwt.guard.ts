@@ -9,6 +9,13 @@ import { isSkipAuth } from '../decorators';
 import { JwtUtil } from '../util';
 import { UserService } from '../../domain/user/user.service';
 import { SUPER_ADMIN } from '../constants';
+import { UserEntity } from '../../domain/user/entities/user.entity';
+
+declare module 'express' {
+  interface Request {
+    user: UserEntity;
+  }
+}
 
 @Injectable()
 export class JwtGuard implements CanActivate {
