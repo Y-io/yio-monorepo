@@ -9,8 +9,8 @@
     "server:doc": "pnpm --filter=server compodoc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "prettier": "npx prettier --check '**/*.{json,ts}'",
-    "prettier:write": "npx prettier --write '**/*.{json,ts}'"
+    "prettier": "prettier --check '**/*.ts'",
+    "prettier:write": "prettier --write '**/*.ts'"
   },
   "keywords": [],
   "author": "",
