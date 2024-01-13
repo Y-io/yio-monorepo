@@ -1,9 +1,14 @@
-import { CanActivate, ContextType, ExecutionContext, Injectable, UnauthorizedException } from '@nestjs/common';
+import {
+  CanActivate,
+  ContextType,
+  ExecutionContext,
+  Injectable,
+  UnauthorizedException,
+} from '@nestjs/common';
 import { isSkipAuth } from '../decorators';
 import { JwtUtil } from '../util';
 import { UserService } from '../../domain/user/user.service';
 import { SUPER_ADMIN } from '../constants';
-
 
 @Injectable()
 export class JwtGuard implements CanActivate {
@@ -17,8 +22,6 @@ export class JwtGuard implements CanActivate {
     const token = req.headers['authorization'] ?? '';
     const [type, jwt] = token.split(' ') ?? [];
     const contextType = context.getType<ContextType>();
-
-    return true;
 
     if (!jwt && contextType === 'ws') {
       // ws 必须登录
@@ -76,7 +79,9 @@ export function getRequestResponseFromContext(context: ExecutionContext) {
           .map((v) => v.split('='))
           .reduce(
             (acc, v) => {
-              acc[decodeURIComponent(v[0].trim())] = decodeURIComponent(v[1].trim());
+              acc[decodeURIComponent(v[0].trim())] = decodeURIComponent(
+                v[1].trim(),
+              );
               return acc;
             },
             {} as Record<string, string>,
