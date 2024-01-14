@@ -1,0 +1,535 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.2.8",
+  "deps": {
+    "autoprefixer": "^10.4.16",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "framer-motion": "^10.18.0",
+    "lodash": "^4.17.21",
+    "postcss": "^8.4.33",
+    "tailwind-merge": "^2.2.0",
+    "tailwindcss-animate": "^1.0.7",
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
+    "@types/compression": "^1.7.5",
+    "@types/lodash": "^4.14.202",
+    "commitizen": "^4.3.0",
+    "conventional-changelog-cli": "^4.1.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.0",
+    "nx": "^17.2.8",
+    "prettier": "^3.0.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.1.3",
+    "vite-plugin-dts": "^3.7.0"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "package.json",
+        "hash": "10036451719262585489"
+      },
+      {
+        "file": ".husky/pre-commit",
+        "hash": "7702016267749539520"
+      },
+      {
+        "file": ".husky/commit-msg",
+        "hash": "4640396120363683034"
+      },
+      {
+        "file": "nx.json",
+        "hash": "6709539926830369702"
+      },
+      {
+        "file": ".husky/prepare-commit-msg",
+        "hash": "16641121492708403879"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "4112368506813469982"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "14697715437014513103"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "13061392639190291226"
+      },
+      {
+        "file": "commitlint.config.js",
+        "hash": "1797922694529005585"
+      },
+      {
+        "file": "README.md",
+        "hash": "1420784529443706277"
+      }
+    ],
+    "projectFileMap": {
+      "@yio/ui": [
+        {
+          "file": "packages/frontend/ui/.eslintrc.cjs",
+          "hash": "18224317155734308275"
+        },
+        {
+          "file": "packages/frontend/ui/.gitignore",
+          "hash": "13046175384202504187"
+        },
+        {
+          "file": "packages/frontend/ui/README.md",
+          "hash": "11460966644741158790"
+        },
+        {
+          "file": "packages/frontend/ui/package.json",
+          "hash": "10875105433928288697",
+          "deps": [
+            "npm:@radix-ui/react-icons",
+            "npm:@radix-ui/react-slot",
+            "npm:react",
+            "npm:react-dom",
+            "npm:vite-tsconfig-paths",
+            "npm:@tailwindcss/typography",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:@vitejs/plugin-react",
+            "npm:eslint",
+            "npm:eslint-plugin-react-hooks",
+            "npm:eslint-plugin-react-refresh",
+            "npm:typescript",
+            "npm:vite"
+          ]
+        },
+        {
+          "file": "packages/frontend/ui/postcss.config.mjs",
+          "hash": "6164717686256752132"
+        },
+        {
+          "file": "packages/frontend/ui/src/components/button.tsx",
+          "hash": "550676844517447301"
+        },
+        {
+          "file": "packages/frontend/ui/src/components/index.ts",
+          "hash": "4748973442331920070"
+        },
+        {
+          "file": "packages/frontend/ui/src/index.ts",
+          "hash": "6423224401028306042"
+        },
+        {
+          "file": "packages/frontend/ui/src/tailwind.css",
+          "hash": "7564909002704342891"
+        },
+        {
+          "file": "packages/frontend/ui/src/tailwind/index.ts",
+          "hash": "8326939434570900290"
+        },
+        {
+          "file": "packages/frontend/ui/src/tailwind/shadcn-plugin.ts",
+          "hash": "15321600518250178709"
+        },
+        {
+          "file": "packages/frontend/ui/src/tailwind/shadcn-preset.ts",
+          "hash": "1113082925770726476"
+        },
+        {
+          "file": "packages/frontend/ui/src/utils/cn.ts",
+          "hash": "15065698073688415681"
+        },
+        {
+          "file": "packages/frontend/ui/src/vite-env.d.ts",
+          "hash": "12946363841406869089"
+        },
+        {
+          "file": "packages/frontend/ui/tailwind.config.ts",
+          "hash": "5361576062837451474"
+        },
+        {
+          "file": "packages/frontend/ui/tsconfig.json",
+          "hash": "14032556756270793734"
+        },
+        {
+          "file": "packages/frontend/ui/tsconfig.node.json",
+          "hash": "8586866767247417612"
+        },
+        {
+          "file": "packages/frontend/ui/vite.config.ts",
+          "hash": "2815758784319050544"
+        }
+      ],
+      "admin": [
+        {
+          "file": "apps/admin/.eslintrc.cjs",
+          "hash": "18224317155734308275"
+        },
+        {
+          "file": "apps/admin/.gitignore",
+          "hash": "13046175384202504187"
+        },
+        {
+          "file": "apps/admin/README.md",
+          "hash": "11460966644741158790"
+        },
+        {
+          "file": "apps/admin/index.html",
+          "hash": "4025202329384162906"
+        },
+        {
+          "file": "apps/admin/package.json",
+          "hash": "4906572661326570546",
+          "deps": [
+            "npm:react",
+            "npm:react-dom",
+            "@yio/ui",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:@vitejs/plugin-react-swc",
+            "npm:eslint",
+            "npm:eslint-plugin-react-hooks",
+            "npm:eslint-plugin-react-refresh",
+            "npm:typescript",
+            "npm:vite"
+          ]
+        },
+        {
+          "file": "apps/admin/postcss.config.js",
+          "hash": "12322886606336582345"
+        },
+        {
+          "file": "apps/admin/public/vite.svg",
+          "hash": "16046085400642193116"
+        },
+        {
+          "file": "apps/admin/src/App.tsx",
+          "hash": "5895633527337364543"
+        },
+        {
+          "file": "apps/admin/src/assets/react.svg",
+          "hash": "16069471864800376455"
+        },
+        {
+          "file": "apps/admin/src/index.css",
+          "hash": "7803641159530544565"
+        },
+        {
+          "file": "apps/admin/src/main.tsx",
+          "hash": "12948679595907665671"
+        },
+        {
+          "file": "apps/admin/src/vite-env.d.ts",
+          "hash": "12946363841406869089"
+        },
+        {
+          "file": "apps/admin/tailwind.config.js",
+          "hash": "12722270448451862428"
+        },
+        {
+          "file": "apps/admin/tsconfig.json",
+          "hash": "14032556756270793734"
+        },
+        {
+          "file": "apps/admin/tsconfig.node.json",
+          "hash": "8586866767247417612"
+        },
+        {
+          "file": "apps/admin/vite.config.ts",
+          "hash": "7521455621696994309"
+        }
+      ],
+      "server": [
+        {
+          "file": "apps/server/.compodoc.json",
+          "hash": "7772957597986120887"
+        },
+        {
+          "file": "apps/server/.eslintrc.js",
+          "hash": "6959674481546986459"
+        },
+        {
+          "file": "apps/server/.prettierrc",
+          "hash": "4808572120966128913"
+        },
+        {
+          "file": "apps/server/README.md",
+          "hash": "8286378509751487236"
+        },
+        {
+          "file": "apps/server/nest-cli.json",
+          "hash": "5644807294267898039"
+        },
+        {
+          "file": "apps/server/package.json",
+          "hash": "13622253778041499240",
+          "deps": [
+            "npm:@nestjs-modules/ioredis",
+            "npm:@nestjs-modules/mailer",
+            "npm:@nestjs/common",
+            "npm:@nestjs/config",
+            "npm:@nestjs/core",
+            "npm:@nestjs/platform-express",
+            "npm:@nestjs/swagger",
+            "npm:@nestjs/throttler",
+            "npm:@nestjs/typeorm",
+            "npm:@node-rs/argon2",
+            "npm:@node-rs/jsonwebtoken",
+            "npm:class-transformer",
+            "npm:class-validator",
+            "npm:compression",
+            "npm:handlebars",
+            "npm:helmet",
+            "npm:ioredis",
+            "npm:ms",
+            "npm:nanoid",
+            "npm:nestjs-cls",
+            "npm:nestjs-throttler-storage-redis",
+            "npm:nodemailer",
+            "npm:pg",
+            "npm:reflect-metadata",
+            "npm:rxjs",
+            "npm:typeorm",
+            "npm:@compodoc/compodoc",
+            "npm:@darraghor/eslint-plugin-nestjs-typed",
+            "npm:@nestjs/cli",
+            "npm:@nestjs/schematics",
+            "npm:@nestjs/testing",
+            "npm:@types/express",
+            "npm:@types/jest",
+            "npm:@types/ms",
+            "npm:@types/node",
+            "npm:@types/nodemailer",
+            "npm:@types/supertest",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-prettier",
+            "npm:jest",
+            "npm:prettier",
+            "npm:source-map-support",
+            "npm:supertest",
+            "npm:ts-jest",
+            "npm:ts-loader",
+            "npm:ts-node",
+            "npm:tsconfig-paths",
+            "npm:typescript"
+          ]
+        },
+        {
+          "file": "apps/server/src/app.controller.ts",
+          "hash": "4552329938751326480"
+        },
+        {
+          "file": "apps/server/src/app.module.ts",
+          "hash": "14990860851513509103"
+        },
+        {
+          "file": "apps/server/src/app.service.ts",
+          "hash": "16892833931858030153"
+        },
+        {
+          "file": "apps/server/src/common/constants/index.ts",
+          "hash": "3606381339636558672"
+        },
+        {
+          "file": "apps/server/src/common/decorators/current-user.decorator.ts",
+          "hash": "7030464321582245290"
+        },
+        {
+          "file": "apps/server/src/common/decorators/index.ts",
+          "hash": "9442886635663818924"
+        },
+        {
+          "file": "apps/server/src/common/decorators/serialize.decorator.ts",
+          "hash": "450747820321832516"
+        },
+        {
+          "file": "apps/server/src/common/decorators/skip-auth.decorator.ts",
+          "hash": "8940476511352079771"
+        },
+        {
+          "file": "apps/server/src/common/guards/jwt.guard.ts",
+          "hash": "2776488336756890578"
+        },
+        {
+          "file": "apps/server/src/common/interceptors/index.ts",
+          "hash": "10809381761684798786"
+        },
+        {
+          "file": "apps/server/src/common/interceptors/serialize.interceptor.ts",
+          "hash": "7139589750779371475"
+        },
+        {
+          "file": "apps/server/src/common/interfaces/abstract-base.entity.ts",
+          "hash": "16792616387919023940"
+        },
+        {
+          "file": "apps/server/src/common/interfaces/base.dto.ts",
+          "hash": "10779199763033164538"
+        },
+        {
+          "file": "apps/server/src/common/interfaces/pagination.dto.ts",
+          "hash": "6666799535393307620"
+        },
+        {
+          "file": "apps/server/src/common/interfaces/query.dto.ts",
+          "hash": "16978804441374467147"
+        },
+        {
+          "file": "apps/server/src/common/util/index.ts",
+          "hash": "6859687796849714921"
+        },
+        {
+          "file": "apps/server/src/common/util/jwt.util.ts",
+          "hash": "616035802142956732"
+        },
+        {
+          "file": "apps/server/src/common/util/random.ts",
+          "hash": "4019178974028859842"
+        },
+        {
+          "file": "apps/server/src/common/util/regex-is.ts",
+          "hash": "6555639920809493380"
+        },
+        {
+          "file": "apps/server/src/common/util/repo.util.ts",
+          "hash": "9224070367340110625"
+        },
+        {
+          "file": "apps/server/src/common/util/util.module.ts",
+          "hash": "10068314053332259151"
+        },
+        {
+          "file": "apps/server/src/core/core.module.ts",
+          "hash": "3380267716525833985"
+        },
+        {
+          "file": "apps/server/src/core/email.service.ts",
+          "hash": "2541396772121013573"
+        },
+        {
+          "file": "apps/server/src/core/env.validation.ts",
+          "hash": "3955649625025836767"
+        },
+        {
+          "file": "apps/server/src/core/helper.ts",
+          "hash": "16557664344943672413"
+        },
+        {
+          "file": "apps/server/src/core/ioredis/index.ts",
+          "hash": "2491933596419533627"
+        },
+        {
+          "file": "apps/server/src/core/ioredis/ioredis.module.ts",
+          "hash": "4555262969397294202"
+        },
+        {
+          "file": "apps/server/src/core/ioredis/ioredis.service.ts",
+          "hash": "12084102614819249767"
+        },
+        {
+          "file": "apps/server/src/domain/auth/auth.controller.ts",
+          "hash": "14565950746214190933"
+        },
+        {
+          "file": "apps/server/src/domain/auth/auth.module.ts",
+          "hash": "10667983284249849652"
+        },
+        {
+          "file": "apps/server/src/domain/auth/auth.service.ts",
+          "hash": "3264419055632393848"
+        },
+        {
+          "file": "apps/server/src/domain/auth/dto/index.ts",
+          "hash": "595135948031190808"
+        },
+        {
+          "file": "apps/server/src/domain/auth/dto/login.dto.ts",
+          "hash": "1300348123978488501"
+        },
+        {
+          "file": "apps/server/src/domain/auth/dto/register.dto.ts",
+          "hash": "17189977972730148538"
+        },
+        {
+          "file": "apps/server/src/domain/user/dto/create-user.dto.ts",
+          "hash": "2214053055899528516"
+        },
+        {
+          "file": "apps/server/src/domain/user/dto/index.ts",
+          "hash": "10135919998857138828"
+        },
+        {
+          "file": "apps/server/src/domain/user/dto/update-user.dto.ts",
+          "hash": "7588191114067950910"
+        },
+        {
+          "file": "apps/server/src/domain/user/dto/user.dto.ts",
+          "hash": "11454387847339175951"
+        },
+        {
+          "file": "apps/server/src/domain/user/entities/user-state.entity.ts",
+          "hash": "5919653891057968599"
+        },
+        {
+          "file": "apps/server/src/domain/user/entities/user.entity.ts",
+          "hash": "11858342770295827260"
+        },
+        {
+          "file": "apps/server/src/domain/user/interfaces/user-profile.ts",
+          "hash": "13308560206744875138"
+        },
+        {
+          "file": "apps/server/src/domain/user/user.controller.ts",
+          "hash": "4867342791558793909"
+        },
+        {
+          "file": "apps/server/src/domain/user/user.module.ts",
+          "hash": "1988250999039226001"
+        },
+        {
+          "file": "apps/server/src/domain/user/user.service.ts",
+          "hash": "4549126980847712363"
+        },
+        {
+          "file": "apps/server/src/main.ts",
+          "hash": "16908402573222211027"
+        },
+        {
+          "file": "apps/server/src/templates/email_verification.hbs",
+          "hash": "9409185336586158276"
+        },
+        {
+          "file": "apps/server/src/templates/login_verification.hbs",
+          "hash": "11676405266346282480"
+        },
+        {
+          "file": "apps/server/src/templates/welcome.hbs",
+          "hash": "5616329076836688108"
+        },
+        {
+          "file": "apps/server/test/app.e2e-spec.ts",
+          "hash": "15142680097789702029"
+        },
+        {
+          "file": "apps/server/test/jest-e2e.json",
+          "hash": "7570273541430074424"
+        },
+        {
+          "file": "apps/server/tsconfig.build.json",
+          "hash": "276845246908739715"
+        },
+        {
+          "file": "apps/server/tsconfig.json",
+          "hash": "1876265833229380624"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+
+> @yio/ui@0.0.0 build /Users/elvin/Documents/yio-monorepo/packages/frontend/ui
+> tsc && vite build
+
+src/components/button.tsx(47,11): error TS6133: 'data' is declared but its value is never read.
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 2.[39m

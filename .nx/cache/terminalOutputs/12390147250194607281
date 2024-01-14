@@ -1,0 +1,7 @@
+
+> @yio/ui@0.0.0 build /Users/elvin/Documents/yio-monorepo/packages/frontend/ui
+> tsc && vite build
+
+src/components/button.tsx(48,12): error TS2365: Operator '+' cannot be applied to types 'number' and 'string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal'.
+src/components/button.tsx(48,26): error TS18049: 'props.children' is possibly 'null' or 'undefined'.
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 2.[39m
