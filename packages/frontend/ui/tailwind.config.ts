@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-import { shadcnPreset } from "./src/tailwind";
+import { shadcnPreset } from "./src";
 
 export default {
   content: ["./src/**/*.{ts,tsx}"],

@@ -1,3 +1,3 @@
 export { cn } from "./utils/cn";
-export * from "./components";
+export * from "./shadcn";
 export { shadcnPreset, shadcnPlugin } from "./tailwind";
